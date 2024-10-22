@@ -1,0 +1,16 @@
+# ninja log v6
+2	90	1729623596455323047	build.ninja	c0db1f2a96d17c61
+3	778	1729623119947211235	CMakeFiles/PolariumGameEngine.dir/libraries/imgui/imgui_demo.cpp.o	12679e07664d955a
+4	1533	1729623119948238530	CMakeFiles/PolariumGameEngine.dir/libraries/imgui/imgui_sdl.cpp.o	9619c6294192a7fe
+7	620	1729623135266497429	CMakeFiles/PolariumGameEngine.dir/libraries/imgui/imgui_widgets.cpp.o	7284bc7425e708d6
+3	885	1729623119947896376	CMakeFiles/PolariumGameEngine.dir/libraries/imgui/imgui_draw.cpp.o	146fd96d4d3f6304
+2	1049	1729623119946713795	CMakeFiles/PolariumGameEngine.dir/libraries/imgui/imgui.cpp.o	3324fe5b05cb60b7
+7	685	1729623135266706504	CMakeFiles/PolariumGameEngine.dir/src/Main.cpp.o	6a9ed48df68869f5
+2	66	1729623596455323047	build.ninja	c0db1f2a96d17c61
+4	168	1729623596468691961	PolariumGameEngine	94a815e1d6db2eee
+6	867	1729624030903945725	CMakeFiles/PolariumGameEngine.dir/src/Main.cpp.o	6a9ed48df68869f5
+867	1011	1729624031764348782	PolariumGameEngine	94a815e1d6db2eee
+6	693	1729624229713859095	CMakeFiles/PolariumGameEngine.dir/src/Main.cpp.o	6a9ed48df68869f5
+693	837	1729624230401733766	PolariumGameEngine	94a815e1d6db2eee
+5	869	1729624324137596642	CMakeFiles/PolariumGameEngine.dir/src/Main.cpp.o	6a9ed48df68869f5
+870	1013	1729624325002252082	PolariumGameEngine	94a815e1d6db2eee
