@@ -24,7 +24,6 @@ include_directories(libraries/sol)
 if(WIN32)
     add_subdirectory(libraries/SDL2)
     include_directories(libraries/Lua/include)
-
     link_directories(libraries/Lua)
 elseif (UNIX)
     find_package(SDL2 REQUIRED)
@@ -45,9 +44,8 @@ add_executable(PolariumGameEngine
         src/Main.cpp
 )
 if(WIN32)
-target_link_libraries(PolariumGameEngine SDL2::SDL2
-        ${LUA_LIBRARIES})
+target_link_libraries(PolariumGameEngine SDL2main SDL2)
 elseif (UNIX)
-    target_link_libraries(PolariumGameEngine ${SDL2_LIBRARIES}
-            ${LUA_LIBRARIES})
+    target_link_libraries(PolariumGameEngine ${SDL2_LIBRARIES})
 endif ()
+target_link_libraries(PolariumGameEngine ${LUA_LIBRARIES})

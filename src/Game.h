@@ -5,7 +5,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-
+#include "SDL2/SDL.h"
 
 class Game {
 private:
@@ -19,8 +19,11 @@ public:
     void Update();
     void Render();
     void Destroy();
+private:
+    SDL_Renderer* renderer;
+    SDL_Window *window;
+    bool isRunning;
 };
-
 
 
 #endif //GAME_H
