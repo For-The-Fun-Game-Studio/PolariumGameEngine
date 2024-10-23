@@ -7,7 +7,8 @@
 
 #include "SDL2/SDL.h"
 
-class Game {
+class Game
+{
 private:
 
 public:
@@ -19,9 +20,12 @@ public:
     void Update();
     void Render();
     void Destroy();
+    int windowWidth;
+    int windowHeight;
+
 private:
     SDL_Renderer* renderer;
-    SDL_Window *window;
+    SDL_Window* window;
     bool isRunning;
 };
 
