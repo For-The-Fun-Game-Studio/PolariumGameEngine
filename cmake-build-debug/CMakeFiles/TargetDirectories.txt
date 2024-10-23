@@ -1,3 +1,11 @@
-/Users/remziisci/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/PolariumGameEngine.dir
-/Users/remziisci/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/remziisci/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/PolariumGameEngine.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/libraries/SDL2/CMakeFiles/sdl_headers_copy.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/libraries/SDL2/CMakeFiles/SDL2main.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/libraries/SDL2/CMakeFiles/SDL2.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/libraries/SDL2/CMakeFiles/SDL2-static.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/libraries/SDL2/CMakeFiles/SDL2_test.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/libraries/SDL2/CMakeFiles/uninstall.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/libraries/SDL2/CMakeFiles/edit_cache.dir
+D:/Desktop/PolariumGameEngine/cmake-build-debug/libraries/SDL2/CMakeFiles/rebuild_cache.dir

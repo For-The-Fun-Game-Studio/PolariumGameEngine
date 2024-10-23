@@ -5,7 +5,7 @@ int main(int argc, char *argv[]) {
 
  game.Initialize();
 
-game.Run();
+ game.Run();
 
  game.Destroy();
 
