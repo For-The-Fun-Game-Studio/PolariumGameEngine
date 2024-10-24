@@ -18,6 +18,10 @@ Game::~Game()
     std::cout << "Game Destructor Called" << std::endl;
 }
 
+void Game::Setup()
+{
+}
+
 void Game::Initialize()
 {
     //Construct SDL
@@ -37,9 +41,9 @@ void Game::Initialize()
         "Polarium Game",
         SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED,
-        windowWidth,
-        windowHeight,
-        SDL_WINDOW_OPENGL | SDL_WINDOW_BORDERLESS);
+        windowWidth / 4,
+        windowHeight / 4,
+        SDL_WINDOW_OPENGL);
     if (!window)
     {
         std::cerr << "SDL_CreateWindow Error: " << SDL_GetError() << std::endl;
@@ -54,12 +58,15 @@ void Game::Initialize()
     {
         std::cerr << "SDL_CreateRenderer Error: " << SDL_GetError() << std::endl;
     }
-    SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN);
+    // SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+    //SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN);
+
     isRunning = true;
 }
 
 void Game::Run()
 {
+    Setup();
     while (isRunning)
     {
         ProcessInput();
@@ -95,10 +102,15 @@ void Game::ProcessInput()
 
 void Game::Render()
 {
-    SDL_SetRenderDrawColor(renderer, 200, 100, 50, 100);
+    SDL_SetRenderDrawColor(renderer, 200, 100, 50, 255);
     SDL_RenderClear(renderer);
 
     //TODO: Render all game objects
+    SDL_Rect playerRect = {.x = 100, .y = 100, .w = 100, .h = 100};
+    SDL_SetRenderDrawColor(renderer, 200, 200, 220, 100);
+    SDL_RenderFillRect(renderer, &playerRect);
+
+
     SDL_RenderPresent(renderer);
 }
 

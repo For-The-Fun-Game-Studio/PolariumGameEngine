@@ -20,6 +20,8 @@ public:
     void Update();
     void Render();
     void Destroy();
+    void Setup();
+
     int windowWidth;
     int windowHeight;
 
