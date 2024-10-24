@@ -7024,3 +7024,44 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "libraries/SDL_image/cmake/PrivateSdlFunctions.cmake:274 (check_c_source_compiles)"
+      - "libraries/SDL_image/cmake/PrivateSdlFunctions.cmake:283 (sdl_check_linker_flag)"
+      - "libraries/SDL_image/CMakeLists.txt:305 (sdl_target_link_options_no_undefined)"
+    checks:
+      - "Performing Test HAVE_WL_NO_UNDEFINED"
+    directories:
+      source: "D:/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t6whhf"
+      binary: "D:/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t6whhf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Desktop/PolariumGameEngine/libraries/SDL_image/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_WL_NO_UNDEFINED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t6whhf'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_06321/fast
+        C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_06321.dir\\build.make CMakeFiles/cmTC_06321.dir/build
+        mingw32-make[1]: Entering directory 'D:/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t6whhf'
+        Building C object CMakeFiles/cmTC_06321.dir/src.c.obj
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DHAVE_WL_NO_UNDEFINED  -fdiagnostics-color=always -o CMakeFiles\\cmTC_06321.dir\\src.c.obj -c D:\\Desktop\\PolariumGameEngine\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t6whhf\\src.c
+        Linking C executable cmTC_06321.exe
+        "C:\\Program Files\\JetBrains\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_06321.dir\\link.txt --verbose=1
+        "C:\\Program Files\\JetBrains\\CLion 2024.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_06321.dir/objects.a
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_06321.dir/objects.a @CMakeFiles\\cmTC_06321.dir\\objects1.rsp
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -Wl,--no-undefined -Wl,--whole-archive CMakeFiles\\cmTC_06321.dir/objects.a -Wl,--no-whole-archive -o cmTC_06321.exe -Wl,--out-implib,libcmTC_06321.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_06321.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/Desktop/PolariumGameEngine/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t6whhf'
+        
+      exitCode: 0
+...

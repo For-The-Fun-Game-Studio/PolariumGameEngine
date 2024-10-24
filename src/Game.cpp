@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <SDL_events.h>
+#include <SDL_image.h>
 
 
 Game::Game()
@@ -106,10 +107,11 @@ void Game::Render()
     SDL_RenderClear(renderer);
 
     //TODO: Render all game objects
-    SDL_Rect playerRect = {.x = 100, .y = 100, .w = 100, .h = 100};
-    SDL_SetRenderDrawColor(renderer, 200, 200, 220, 100);
-    SDL_RenderFillRect(renderer, &playerRect);
-
+    SDL_Surface* surface = IMG_Load("./assets/images/tank-tiger-right.png");
+    if (surface == NULL)
+    {
+        std::cerr << "IMG_Load Error: " << SDL_GetError() << std::endl;
+    }
 
     SDL_RenderPresent(renderer);
 }
